@@ -1,3 +1,6 @@
+import moonImage from "A:/Mahmoud/almdrasa/Java Script/Final project/todo-app-main/images/icon-moon.svg";
+import sunImage from "A:/Mahmoud/almdrasa/Java Script/Final project/todo-app-main/images/icon-sun.svg";
+
 const elements = {
   topScreen: document.querySelector(".top"),
   themeIcon: document.querySelector(".theme__icon"),
@@ -34,8 +37,8 @@ const toggleDarkTheme = () => {
   elements.bottomContent.classList.toggle("darkBottomContent");
   elements.inputField.classList.toggle("darkInputField");
   elements.themeIcon.src = document.body.classList.contains("darkBody")
-    ? "images/icon-moon.svg"
-    : "images/icon-sun.svg";
+    ? moonImage
+    : sunImage;
   listItemArray().forEach((item) => item?.classList.toggle("darkListItem"));
   saveToDataBase("darkModeFlag", document.body.classList.contains("darkBody"));
 };
