@@ -78,7 +78,7 @@ const renderTaskList = (tasks) => {
           <div class="circle${task.completed ? " completed" : ""}">
             ${
               task.completed
-                ? '<img src="images/icon-check.svg" class="icon__checked">'
+                ? `<img src=${checkImage}  class="icon__checked">`
                 : ""
             }
           </div>
