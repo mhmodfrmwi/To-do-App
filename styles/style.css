@@ -241,6 +241,10 @@ html {
 }
 
 @media (max-width: 730px) {
+  .content,
+  .bottom {
+    width: 80%;
+  }
   .actions {
     margin: 1rem;
     background-color: #fff;
@@ -250,6 +254,13 @@ html {
   }
   .darkActions {
     background-color: var(--very-dark-desaturated-blue);
+  }
+}
+
+@media (max-width: 500px) {
+  .content,
+  .bottom {
+    width: 100%;
   }
 }
 /* end responsive */
