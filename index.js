@@ -1,6 +1,7 @@
 import moonImage from "/images/icon-moon.svg";
 import sunImage from "/images/icon-sun.svg";
-
+import checkImage from "/images/icon-check.svg";
+import deleteImage from "images/icons8-multiply-64.png";
 const elements = {
   topScreen: document.querySelector(".top"),
   themeIcon: document.querySelector(".theme__icon"),
@@ -50,7 +51,7 @@ const toggleTask = (e, index) => {
     ? e.target
     : e.target.parentNode;
   targetElement.classList.toggle("completed");
-  const checkIcon = `<img src='images/icon-check.svg' class="icon__checked">`;
+  const checkIcon = `<img src=${checkImage} class="icon__checked">`;
   targetElement.innerHTML = targetElement.classList.contains("completed")
     ? checkIcon
     : "";
@@ -84,7 +85,7 @@ const renderTaskList = (tasks) => {
           <p>${task.value}</p>
         </div>
         <div class="rightItem">
-          <img src="images/icons8-multiply-64.png" class="deleteIcon">
+          <img src=${deleteImage} class="deleteIcon">
         </div>
       </li>`
     )
