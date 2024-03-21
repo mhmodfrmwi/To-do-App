@@ -64,7 +64,7 @@ html {
   transition: 0.2s ease-in-out;
 }
 .bottom {
-  width: 42%;
+  width: 50%;
 
   margin: 0 auto;
 }
@@ -72,7 +72,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 42%;
+  width: 50%;
   margin: 0 auto;
   padding: 5rem 1rem;
   margin-top: 3rem;
@@ -166,6 +166,8 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  margin-top: -63px;
+  z-index: 1;
 }
 .action:hover,
 .list__item.last__section .item:last-child:hover {
@@ -209,16 +211,18 @@ html {
   color: white;
   border-bottom: 0.01px solid var(--very-dark-grayish-blue);
 }
-.last__section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.last__section,
+.actions {
+  display: flex;
   border-radius: 0.5rem;
-  gap: 9rem;
   padding: 2rem;
   font-size: small;
   font-weight: 700;
   border-bottom: 0;
   color: var(--dark-grayish-blue-2);
+}
+.darkActions {
+  transition: 0.2s ease-in-out;
 }
 .darkBottomContent,
 .darkInputField {
@@ -229,37 +233,20 @@ html {
 /* end dark theme */
 /* responsive */
 
-@media (max-width: 750px) {
-  .container {
-    width: 100%;
-  }
-
-  .bottom {
-    width: 100%;
-  }
-
+@media (max-width: 1020px) {
   .content,
   .bottom {
-    width: 100%;
-    padding: 2rem 1rem;
-  }
-
-  .last__section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .actions {
-    order: 2;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .item {
-    text-align: center;
+    width: 63%;
   }
 }
 
+@media (max-width: 730px) {
+  .actions {
+    margin: 1rem;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 15px 2px rgba(40, 39, 39, 0.1);
+    gap: 1rem;
+  }
+}
 /* end responsive */

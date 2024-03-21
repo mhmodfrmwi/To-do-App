@@ -13,6 +13,7 @@ export const elements = {
   all: document.querySelector(".show__all"),
   inputFieldCircle: document.querySelector(".circleInputField"),
   ulElement: document.querySelector(".first__ul"),
+  actions: document.querySelector(".actions"),
 };
 
 export const listItemArray = () => document.querySelectorAll(".list__item");

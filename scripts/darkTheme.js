@@ -9,6 +9,7 @@ export const toggleDarkTheme = () => {
   elements.secondUl.classList.toggle("darkList");
   elements.bottomContent.classList.toggle("darkBottomContent");
   elements.inputField.classList.toggle("darkInputField");
+  elements.actions.classList.toggle("darkActions");
   elements.themeIcon.src = document.body.classList.contains("darkBody")
     ? moonImage
     : sunImage;
