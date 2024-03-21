@@ -1,5 +1,5 @@
 import { elements } from "./scripts/elements";
-import { loadFromDataBase, saveToDataBase } from "./scripts/dataStorage";
+import { loadFromDataBase } from "./scripts/dataStorage";
 import { toggleDarkTheme } from "./scripts/darkTheme";
 
 import {

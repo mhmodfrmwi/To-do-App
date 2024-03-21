@@ -11,8 +11,8 @@ export const toggleDarkTheme = () => {
   elements.inputField.classList.toggle("darkInputField");
   elements.actions.classList.toggle("darkActions");
   elements.themeIcon.src = document.body.classList.contains("darkBody")
-    ? moonImage
-    : sunImage;
+    ? sunImage
+    : moonImage;
   listItemArray().forEach((item) => item?.classList.toggle("darkListItem"));
   saveToDataBase("darkModeFlag", document.body.classList.contains("darkBody"));
 };
