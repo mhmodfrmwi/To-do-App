@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <article class="top" id="top">
+        <div class="content" id="content">
+          <div class="top__content">
+            <h1 class="title">T O D O</h1>
+            <img src="/images/icon-moon.svg" alt="" class="theme__icon" />
+          </div>
+          <div class="bottom__content search__field">
+            <div class="circleInputField"></div>
+            <input
+              type="text"
+              class="input__field"
+              placeholder="Create a new todo.."
+            />
+          </div>
+        </div>
+      </article>
+      <article class="bottom" id="bottom">
+        <div class="bottom__content bottom__ul" id="content">
+          <ul class="list__items"></ul>
+          <ul class="list__items second__ul">
+            <li class="list__item last__section">
+              <div class="item">items left</div>
+              <div class="actions">
+                <div class="item action show__all">All</div>
+                <div class="item action show__active">Active</div>
+                <div class="item action show__completed">Completed</div>
+              </div>
+              <div class="item clear">Clear Completed</div>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/mhmodfrmwi" target="_blank"
+        >Mahmoud Elframwi</a
+      >.
+    </div>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
