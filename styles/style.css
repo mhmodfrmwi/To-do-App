@@ -141,7 +141,9 @@ html {
   border-bottom: 0.1px solid var(--light-grayish-blue-hover);
   transition: background-color 0.3s;
 }
-
+.list__item.dragging :where(.leftItem) {
+  opacity: 0;
+}
 .list__item:hover .deleteIcon {
   visibility: visible;
 }
@@ -159,17 +161,6 @@ html {
   cursor: pointer;
   visibility: hidden; /* Hide the delete icon by default */
 }
-/* .list__item:not(:last-of-type):hover:after {
-  content: "X";
-  position: absolute;
-  right: 0;
-  color: var(--very-dark-blue);
-  padding: 5px;
-  width: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-} */
-
 .actions {
   display: flex;
   align-items: center;
