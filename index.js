@@ -1,5 +1,5 @@
-import moonImage from "A:/Mahmoud/almdrasa/Java Script/Final project/todo-app-main/images/icon-moon.svg";
-import sunImage from "A:/Mahmoud/almdrasa/Java Script/Final project/todo-app-main/images/icon-sun.svg";
+import moonImage from "/images/icon-moon.svg";
+import sunImage from "/images/icon-sun.svg";
 
 const elements = {
   topScreen: document.querySelector(".top"),
