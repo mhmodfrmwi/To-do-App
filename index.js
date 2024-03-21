@@ -1,7 +1,7 @@
 import moonImage from "/images/icon-moon.svg";
 import sunImage from "/images/icon-sun.svg";
 import checkImage from "/images/icon-check.svg";
-import deleteImage from "images/icons8-multiply-64.png";
+import deleteImage from "/images/icons8-multiply-64.png";
 const elements = {
   topScreen: document.querySelector(".top"),
   themeIcon: document.querySelector(".theme__icon"),
