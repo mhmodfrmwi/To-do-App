@@ -203,12 +203,12 @@ html {
 
 .darkList {
   background-color: var(--very-dark-desaturated-blue);
-  color: #fff;
+  color: var(--light-grayish-blue-hover);
   box-shadow: 0px 0px 15px 2px rgba(40, 39, 39, 0.1);
 }
 .darkListItem {
   background-color: var(--very-dark-desaturated-blue);
-  color: white;
+  color: var(--light-grayish-blue-hover);
   border-bottom: 0.01px solid var(--very-dark-grayish-blue);
 }
 .last__section,
@@ -227,7 +227,7 @@ html {
 .darkBottomContent,
 .darkInputField {
   background-color: var(--dark-content-bg);
-  color: var(--dark-text);
+  color: var(--light-grayish-blue-hover);
 }
 
 /* end dark theme */
@@ -247,6 +247,9 @@ html {
     width: 100%;
     box-shadow: 0px 0px 15px 2px rgba(40, 39, 39, 0.1);
     gap: 1rem;
+  }
+  .darkActions {
+    background-color: var(--very-dark-desaturated-blue);
   }
 }
 /* end responsive */
